@@ -1,0 +1,41 @@
+h1 {
+    font-family: Arial;
+    color: gray;
+}
+
+.light {
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  border: 5px solid;
+  border-color:#ffdd00 transparent transparent transparent;
+  border-radius: 100%/40px 40px 0 0;
+  -webkit-transform: rotate(-50deg);
+}
+
+.earth {
+    position: relative;
+    bottom: 122px;
+    left: 77px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.sun {
+  position: relative;
+  left: 100px;
+  top: 100px;
+  height: 200px;
+  width: 200px;
+  -webkit-animation-duration: 0.133s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: orbit;
+}
+
+@-webkit-keyframes orbit {
+  from { -webkit-transform: rotate(0deg) }
+  to { -webkit-transform: rotate(360deg) }
+}
+
